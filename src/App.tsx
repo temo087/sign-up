@@ -1,14 +1,13 @@
-import React from "react";
+
 import { Stack } from "@mui/material";
 import "./App.css";
+import Info from "./component/Info";
+import FormComponent from "./component/FormComponent";
 import BgDesk from "./assets/bg-intro-desktop.png";
 import BgMobile from "./assets/bg-intro-mobile.png";
-import Info from "./components/Info";
-import FormComponent from "./components/FormComponent";
-
 const App = () => {
   return (
-    // Body Stack
+
     <Stack
       sx={{
         backgroundColor: "hsl(0, 100%, 74%) ",
@@ -23,7 +22,7 @@ const App = () => {
       alignItems={"center"}
       minHeight={"100vh"}
     >
-      {/* Wrapper Stack */}
+
       <Stack
         justifyContent={"center"}
         alignItems={"center"}
@@ -35,9 +34,7 @@ const App = () => {
         }}
         maxWidth={"1440px"}
       >
-        {/* Information Component */}
         <Info />
-        {/* Form Component */}
         <FormComponent />
       </Stack>
     </Stack>
